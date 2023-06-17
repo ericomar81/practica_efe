@@ -1,0 +1,13 @@
+body{
+	background-color: #FEFEFE;
+}
+.rojo{
+				color: red;
+			}
+			.azul{
+				color: blue;
+			}
+			#cuadroTexto{
+				height:100px;
+				width:300px;	
+			}
