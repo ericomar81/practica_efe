@@ -1,0 +1,63 @@
+<!DOCTYPE html lang='es'>
+	<head>
+		<title>Codificador</title>
+		<meta charset='utf-8'>
+		<style>
+			.rojo{
+				color: red;
+			}
+			.azul{
+				color: blue;
+			}
+			#cuadroTexto{
+				height:100px;
+				width:300px;	
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+		</header>
+		<nav>
+			<a href="index.html">Inicio</a>
+			<a href="codificador.html">Codificador</a>
+		</nav>
+		<main>
+			<content>
+				<h1>Códificador de EFEs</h1>
+				<input type="text" name="cuadroTexto" id="cuadroTexto">
+				<input type="button" name="boton" id="boton" value="Enviar">
+			</content>
+			<content id="resultado" style="display:none;">
+				<h2>El resultado es:</h2>
+				<p id="parrafoResultado"></p>
+			</content>
+		</main>
+		<script>
+			/*alert('Funciona javascript aquí.');*/
+			window.onload = preparaBoton
+			
+			function preparaBoton(){
+				document.getElementById("boton").onclick = function(){
+					var resultado;
+					var textoIngresado;
+					textoIngresado = document.getElementById("cuadroTexto").value;
+					textoIngresado = textoIngresado.replaceAll("a","fa");
+					textoIngresado = textoIngresado.replaceAll("e","fe");
+					textoIngresado = textoIngresado.replaceAll("i","fi");
+					textoIngresado = textoIngresado.replaceAll("o","fo");
+					textoIngresado = textoIngresado.replaceAll("u","fu");
+					textoIngresado = textoIngresado.replaceAll("A","FA");
+					textoIngresado = textoIngresado.replaceAll("E","FE");
+					textoIngresado = textoIngresado.replaceAll("I","FI");
+					textoIngresado = textoIngresado.replaceAll("O","FO");
+					textoIngresado = textoIngresado.replaceAll("U","FU");
+					alert(textoIngresado);
+					document.getElementById("parrafoResultado").textContent = textoIngresado;
+					document.getElementById("resultado").setAttribute("style","display:show;");
+				}
+			}
+			
+		</script>
+	</body>
+</html>
