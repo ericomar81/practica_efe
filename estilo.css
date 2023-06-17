@@ -1,5 +1,6 @@
 body{
-	background-color: #FEFEFE;
+	background-color: #F3DB8B;
+	font-family: Arial;
 }
 .rojo{
 	color: red;
@@ -10,4 +11,18 @@ body{
 #cuadroTexto{
 	height:100px;
 	width:300px;	
+}
+nav a{
+	padding-inline: 20px;
+	font-size: 15px;
+	font-weight: bolder;
+} 
+
+img{
+	width: 20%;
+	height: 20%;
+}
+
+img:hover{
+	border: 2px solid black;
 }
